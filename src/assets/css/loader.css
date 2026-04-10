@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --ss-poppins: "Poppins", sans-serif;
+  --ss-love: "Love Ya Like A Sister", cursive;
+  --ss-font500: 500;
+  --ss-font600: 600;
+  --ss-font700: 700;
+  --ss-font800: 800;
+  --ss-fontbold: bold;
+  --ss-primary: #22A652;
+  --ss-secondary: #FFE824;
+}
+
+/* Loader Base */
+#page-loader {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at center, #fff 0%, #fff 70%);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Content */
+.loader-inner {
+  text-align: center;
+}
+
+/* Logo */
+.loader-logo {
+  width: 150px;
+  opacity: 0;
+  transform: scale(0.8);
+  filter: blur(6px);
+}
+
+/* Speed Bar */
+.loader-bar-wrap {
+  width: 260px;
+  height: 4px;
+  background: rgba(255,255,255,0.15);
+  margin: 28px auto;
+  overflow: hidden;
+}
+
+.loader-bar {
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90deg, #22A652, #FFE824);
+}
+
+/* Text Mask */
+.loader-text-wrap {
+  overflow: hidden;
+}
+
+.loader-text-wrap h1 {
+  color: #000;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transform: translateY(100%);
+  font-family: var(--ss-love);
+}
+
+@media screen and (max-width: 767px) { 
+  .loader-text-wrap h1 {
+    font-size: 25px;
+  }
+  .loader-logo {
+    width: 100px;
+  }
+}
