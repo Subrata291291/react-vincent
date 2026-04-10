@@ -65,7 +65,7 @@ function MembersFaculty() {
 
               <button
                 className="common-btn mt-5"
-                onClick={() => navigate("/contact")}
+                onClick={() => navigate("/jobopportunity")}
               >
                 Become An Instructor
               </button>
