@@ -197,6 +197,9 @@ button {
     padding: 1rem 2rem;
     border-bottom: 1px solid var(--ss-primary);
 }
+.header-area .navbar-nav .dropdown-menu:last-child .dropdown-item {
+    border: none;
+}
 .header-area .common-btn {
     margin-left: 2.5rem;
 }

@@ -221,28 +221,63 @@ function Header() {
 
           <ul className="navbar-nav">
 
-            <li className="nav-item">
-              <Link className="nav-link" to="/">Home</Link>
-            </li>
+              <li className="nav-item">
+                <Link className="nav-link active" to="/">Home</Link>
+              </li>
 
-            <li className="nav-item">
-              <Link className="nav-link" to="/admissions">Admissions</Link>
-            </li>
+              {/* OUR SCHOOL */}
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                  Our School
+                </a>
+                <ul className="dropdown-menu">
+                  <li><Link className="dropdown-item" to="/our-vision">Vission</Link></li>
+                  <li><Link className="dropdown-item" to="/ManagingCommittee">Managing Commitee</Link></li>
+                  <li><Link className="dropdown-item" to="/ChairmanMessage">Chairperson's Message</Link></li>
+                  <li><Link className="dropdown-item" to="/infrastructure">Infrastructure</Link></li>
+                  <li><Link className="dropdown-item" to="/FacultyMembers">Faculty Members</Link></li>
+                  <li><Link className="dropdown-item" to="/CounsellorSpecialEducator">Counsellor & Special Educator</Link></li>
+                  <li><Link className="dropdown-item" to="/AwardsAchievements">Awards & Achievements</Link></li>
+                  <li><Link className="dropdown-item" to="/SchoolHouseSystem">School House System</Link></li>
+                  <li><Link className="dropdown-item" to="/StudentCouncil">School Council</Link></li>
+                  <li><Link className="dropdown-item" to="/AnnualCalendar">Annual Calendar</Link></li>
+                </ul>
+              </li>
 
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                Our School
-              </a>
-              <ul className="dropdown-menu">
-                <li><Link className="dropdown-item" to="/our-vision">Vision</Link></li>
-              </ul>
-            </li>
+              {/* SCHOLASTIC */}
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                  Scholastic & Co-Scholastic
+                </a>
+                <ul className="dropdown-menu">
+                  <li><Link className="dropdown-item" to="/scholastic">Scholastic</Link></li>
+                  <li><Link className="dropdown-item" to="/co-scholastic">Co-Scholastic</Link></li>
+                  <li><Link className="dropdown-item" to="/activities">Activities</Link></li>
+                  <li><Link className="dropdown-item" to="/gallery">Gallery</Link></li>
+                  <li><Link className="dropdown-item" to="/JobOpportunity">Job Opportunity</Link></li>
+                </ul>
+              </li>
 
-            <li className="nav-item">
-              <Link className="nav-link" to="/contact">Contact</Link>
-            </li>
+              {/* DISCLOSURES */}
+              <li className="nav-item dropdown">
+                <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                  Mandatory Disclosures
+                </a>
+                <ul className="dropdown-menu">
+                  <li><Link className="dropdown-item" to="/noc">NOC</Link></li>
+                  <li><Link className="dropdown-item" to="/affiliation">Affiliation</Link></li>
+                </ul>
+              </li>
 
-          </ul>
+              <li className="nav-item">
+                <Link className="nav-link" to="/admissions">Admissions</Link>
+              </li>
+
+              <li className="nav-item">
+                <Link className="nav-link" to="/contact">Contact</Link>
+              </li>
+
+            </ul>
 
         </div>
       </div>
